@@ -133,7 +133,7 @@ function saveTransactions() {
 
 // Function to reset the form fields
 function resetForm() {
-    transactionForm.reset();
+    transactionForm.reset();    
     entryIdInput.value = '';
     submitBtn.textContent = 'Add Entry';
 }
