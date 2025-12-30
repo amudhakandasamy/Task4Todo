@@ -1,0 +1,186 @@
+body {
+    font-family: Arial,sans-serif;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230706/pngtree-money-and-coins-calculator-tracking-income-and-expenses-with-3d-rendering-image_3804538.jpg");
+    background-size: cover;
+    background-position: center; 
+    font-size: 14px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #f7cd7e;  
+    opacity: 0.8;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Summary Section */
+.summary-container {
+    display: flex;  
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.summary-box {
+    background: #79522d;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;    
+}
+
+
+/* Form Section */
+.form-container {
+    background: #79522d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 5x;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+button#submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+
+button#reset-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+
+/* Entries List Section */
+.filters {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.filters label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#entries-list {
+    list-style-type: none;
+}
+
+.entry-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.entry-item.income {
+    background-color: #e8fadf;
+    border-left: 5px solid #28a745;
+}
+
+.entry-item.expense {
+    background-color: #fcebeb;
+    border-left: 5px solid #dc3545;
+}
+
+.entry-details {
+    flex-grow: 1;
+}
+
+.entry-description {
+ 
+    display: block;
+}
+
+
+.entry-actions button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/* Responsive code*/
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .summary-container {
+        flex-direction: column;
+    }
+
+    .summary-box {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .entry-item {
+        flex-wrap: wrap;
+    }
+
+    .entry-actions {
+        margin-top: 10px;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+
